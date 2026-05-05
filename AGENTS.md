@@ -2,11 +2,11 @@
 
 ## Quick Reference
 
-| Command | Description |
-|---------|-------------|
-| `pnpm dev` | Start development server |
-| `pnpm build` | Production build |
-| `pnpm lint` | Run ESLint |
+| Command                             | Description               |
+| ----------------------------------- | ------------------------- |
+| `pnpm dev`                          | Start development server  |
+| `pnpm build`                        | Production build          |
+| `pnpm lint`                         | Run ESLint                |
 | `pnpm dlx shadcn@latest add <name>` | Add a shadcn/ui component |
 
 ## Architecture

@@ -18,7 +18,7 @@ type PageProps = {
 const getLanguage = (value?: string | string[]): Language => {
   const lang = Array.isArray(value) ? value[0] : value;
 
-  return lang === "it" ? "it" : "en";
+  return lang === "en" ? "en" : "it";
 };
 
 export default async function AstrologiaPage({ searchParams }: PageProps) {
@@ -26,7 +26,7 @@ export default async function AstrologiaPage({ searchParams }: PageProps) {
   const lang = getLanguage(params.lang);
 
   return (
-    <main className="bg-aurelia-radial relative min-h-screen overflow-hidden">
+    <main className="bg-aurelia-radial relative min-h-screen">
       <Starfield className="fixed" />
 
       <div
@@ -35,12 +35,15 @@ export default async function AstrologiaPage({ searchParams }: PageProps) {
       />
 
       <Header lang={lang} />
-      <Hero lang={lang} />
-      <Intro lang={lang} />
-      <Services lang={lang} />
-      <Zodiac lang={lang} />
-      <Cta lang={lang} />
-      <Footer lang={lang} />
+
+      <div className="relative overflow-hidden">
+        <Hero lang={lang} />
+        <Intro lang={lang} />
+        <Services lang={lang} />
+        <Zodiac lang={lang} />
+        <Cta lang={lang} />
+        <Footer lang={lang} />
+      </div>
     </main>
   );
 }

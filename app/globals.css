@@ -138,6 +138,11 @@
   body {
     @apply bg-background text-foreground;
   }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
 }
 
 @layer utilities {
@@ -193,5 +198,38 @@
 
   .animate-float-slow {
     animation: float-slow 6s ease-in-out infinite;
+  }
+
+  @keyframes aur-drawer-in-from-right {
+    from {
+      transform: translate3d(100%, 0, 0);
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes aur-drawer-out-to-right {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+
+  .animate-aur-drawer-in-from-right {
+    animation: aur-drawer-in-from-right 0.35s cubic-bezier(0.32, 0.72, 0, 1) both;
+  }
+
+  .animate-aur-drawer-out-to-right {
+    animation: aur-drawer-out-to-right 0.28s cubic-bezier(0.32, 0.72, 0, 1) both;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-aur-drawer-in-from-right,
+    .animate-aur-drawer-out-to-right {
+      animation: none;
+    }
   }
 }

@@ -31,13 +31,13 @@ export const Hero = ({ lang }: { lang: Language }) => {
 		<section
 			id='astrologia'
 			className='relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center px-6 pt-12 pb-24 text-center md:px-10 md:pt-20 md:pb-36'>
-			<span className='text-aurelia-gold/80 mb-8 inline-flex items-center gap-3 font-sans text-[10px] tracking-[0.5em] uppercase md:text-xs'>
+			{/* <span className='text-aurelia-gold/80 mb-8 inline-flex items-center gap-3 font-sans text-[10px] tracking-[0.5em] uppercase md:text-xs'>
 				<span className='bg-aurelia-gold/40 h-px w-10' />
 				{copy.eyebrow}
 				<span className='bg-aurelia-gold/40 h-px w-10' />
-			</span>
+			</span> */}
 
-			<div className='animate-float-slow relative mb-10 size-32 md:size-40'>
+			<div className='animate-float-slow relative mb-14 size-32 md:size-40'>
 				<div className='border-aurelia-gold/30 absolute inset-0 rounded-full border' />
 				<div className='border-aurelia-gold/15 absolute inset-3 rounded-full border' />
 				<Image
@@ -65,15 +65,15 @@ export const Hero = ({ lang }: { lang: Language }) => {
 			<div className='mt-12 flex flex-col items-center gap-4 sm:flex-row'>
 				<a
 					href='#servizi'
-					className='group bg-aurelia-gold text-aurelia-navy-deep hover:bg-aurelia-gold-soft inline-flex h-12 items-center gap-2 rounded-full px-7 font-sans text-xs font-medium tracking-[0.25em] uppercase transition-colors'>
+					className='group bg-aurelia-gold text-aurelia-navy-deep hover:bg-aurelia-gold-soft inline-flex h-12 items-center gap-2 rounded-full px-7 font-sans text-xs font-medium tracking-[0.25em] uppercase transition-colors md:px-10 lg:px-14'>
 					<Sparkles className='size-4' />
 					{copy.primary}
 				</a>
-				<a
+				{/* <a
 					href='#zodiaco'
 					className='border-aurelia-gold/40 text-aurelia-cream hover:border-aurelia-gold hover:text-aurelia-gold-soft inline-flex h-12 items-center rounded-full border px-7 font-sans text-xs tracking-[0.25em] uppercase transition-colors'>
 					{copy.secondary}
-				</a>
+				</a> */}
 			</div>
 
 			<p className='text-aurelia-gold/70 mt-16 font-serif text-sm tracking-[0.3em] uppercase italic'>{copy.tagline}</p>

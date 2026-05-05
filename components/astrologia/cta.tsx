@@ -56,15 +56,15 @@ export const Cta = ({ lang }: { lang: Language }) => {
 					<div className='mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row'>
 						<a
 							href='mailto:hello@aureliamystica.com'
-							className='bg-aurelia-gold text-aurelia-navy-deep hover:bg-aurelia-gold-soft inline-flex h-12 items-center gap-2 rounded-full px-8 font-sans text-xs font-medium tracking-[0.25em] uppercase transition-colors'>
+							className='bg-aurelia-gold text-aurelia-navy-deep hover:bg-aurelia-gold-soft inline-flex h-12 items-center gap-2 rounded-full px-12 py-2 font-sans text-xs font-medium tracking-[0.25em] uppercase transition-colors'>
 							<Sparkles className='size-4' />
 							{copy.cta}
 						</a>
-						<a
+						{/* <a
 							href='#'
 							className='border-aurelia-gold/40 text-aurelia-cream hover:border-aurelia-gold hover:text-aurelia-gold-soft inline-flex h-12 items-center rounded-full border px-8 font-sans text-xs tracking-[0.25em] uppercase transition-colors'>
 							@aurelia.mystica
-						</a>
+						</a> */}
 					</div>
 
 					<p className='text-aurelia-gold/70 mt-12 font-serif text-xs tracking-[0.3em] uppercase italic md:text-sm'>

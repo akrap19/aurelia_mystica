@@ -25,6 +25,11 @@ export const metadata: Metadata = {
   title: "Aurelia Mystica · Astrology",
   description:
     "Aurelia Mystica — your guide through the stars. Birth charts, synastry, transits, and solar return readings. The stars speak. We translate.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: [{ url: "/icon", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({
@@ -33,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="it" className="dark">
       <body
         className={`${cinzel.variable} ${playfair.variable} ${inter.variable} antialiased`}
       >
