@@ -1,5 +1,7 @@
 import { Facebook, Instagram } from 'lucide-react'
 
+import { INSTAGRAM_PROFILE_URL } from '@/lib/instagram'
+
 type Language = 'en' | 'it'
 
 const TAGLINE = {
@@ -44,7 +46,7 @@ export const Footer = ({ lang }: { lang: Language }) => {
 					aria-label={SOCIAL_NAV_LABEL[lang]}
 					className='flex items-center -space-x-3 [&_a]:relative [&_a]:z-0 [&_a:focus-visible]:z-10'>
 					<a
-						href='https://www.instagram.com/aurelia_mystica_/'
+						href={INSTAGRAM_PROFILE_URL}
 						target='_blank'
 						rel='noopener noreferrer'
 						className={iconLinkClass}

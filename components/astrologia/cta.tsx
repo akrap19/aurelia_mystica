@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import { Sparkles } from 'lucide-react'
 
+import { INSTAGRAM_DM_URL } from '@/lib/instagram'
+
 type Language = 'en' | 'it'
 
 const COPY = {
@@ -55,7 +57,9 @@ export const Cta = ({ lang }: { lang: Language }) => {
 
 					<div className='mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row'>
 						<a
-							href='mailto:hello@aureliamystica.com'
+							href={INSTAGRAM_DM_URL}
+							target='_blank'
+							rel='noopener noreferrer'
 							className='bg-aurelia-gold text-aurelia-navy-deep hover:bg-aurelia-gold-soft inline-flex h-12 items-center gap-2 rounded-full px-12 py-2 font-sans text-xs font-medium tracking-[0.25em] uppercase transition-colors'>
 							<Sparkles className='size-4' />
 							{copy.cta}
